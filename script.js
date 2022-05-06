@@ -39,6 +39,8 @@ function changeGrid() {
 
 }
 
+
+
 changeGrid()
 makeGrid(16, 16)
 colorChange()
