@@ -12,28 +12,29 @@
 
 <body>
     <header>
-        <h1>Etch a Sketch</h1>
+        <h1> Magic Etch a Sketch Screen</h1>
     </header>
     <div class="container">
         <div class="grid"></div>
         <div class="buttons">
             <button class="blackButton" onclick="newColor('black')">
-                Black
+                Black <span class="black-pincel"><img src="images/black.png"></span>
               </button>
             <button class="erasorButton" onclick="newColor('white')">
-                Erasor
+                Erasor <span class="erasor"><img src="/images/erasor.png"></span>
               </button>
             <button class="randomButton" onclick="newColor('random')">
-                RBG
+                RBG <span class="colorfull"><img src="images/colorfull.png"></span>
               </button>
-            <button onclick="resetGrid()">Reset</button>
+            <button onclick="resetGrid()"> Reset <span class="trashcan"><img src="/images/trashcan.png"></span> 
+            </button>
         </div>
         <div>
-            <input type="text" placeholder="greater than 2, less than 100" value="16" onchange="newGridSize(this.value)" />
+            <input type="text" placeholder="greater than 2, less or equal 100" value="16" onchange="newGridSize(this.value)" />
             <button>Set New Size</button>
         </div>
         <div>
-            <input type="text" placeholder="Black, green, red..." onchange="newColor(this.value)" />
+            <input type="text" placeholder="Blue, green, #F18F01" onchange="newColor(this.value)" />
             <button>Set New Color</button>
         </div>
     </div>

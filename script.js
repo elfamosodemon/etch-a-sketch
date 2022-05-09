@@ -23,7 +23,8 @@ function newGridSize(input) {
     if (input >= 2 && input <= 100) {
         makeGrid(input);
     } else {
-        console.log("greater than 2, less than 100")
+        let userInput = prompt("greater than 2, less or equal 100");
+        makeGrid(userInput);
     }
 
 }
