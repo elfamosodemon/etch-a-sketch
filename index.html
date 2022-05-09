@@ -12,15 +12,29 @@
 
 <body>
     <header>
-        <h1>ETCH A SKETCH</h1>
+        <h1>Etch a Sketch</h1>
     </header>
-    <div class="buttons">
-        <div class="grid_64">64 PX</div>
-        <div class="grid_16">16 PX</div>
-        <div class="colors">COLORS</div>
-    </div>
-    <div class="grid">
-        <div class="container">
+    <div class="container">
+        <div class="grid"></div>
+        <div class="buttons">
+            <button class="blackButton" onclick="newColor('black')">
+                Black
+              </button>
+            <button class="erasorButton" onclick="newColor('white')">
+                Erasor
+              </button>
+            <button class="randomButton" onclick="newColor('random')">
+                RBG
+              </button>
+            <button onclick="resetGrid()">Reset</button>
+        </div>
+        <div>
+            <input type="text" placeholder="greater than 2, less than 100" value="16" onchange="newGridSize(this.value)" />
+            <button>Set New Size</button>
+        </div>
+        <div>
+            <input type="text" placeholder="Black, green, red..." onchange="newColor(this.value)" />
+            <button>Set New Color</button>
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
